@@ -1,0 +1,112 @@
+<div id="divSetupIn">
+ <h3>Empire Description</h3>
+  <div><table id="tblED">
+   <tr><td class="edtd">Empire Name:</td><td colspan="2" class="edtd"><input type="text" id="empNameText" value=""></input></td><td class="edtd"></td></tr>
+   <tr><td class="edtd">Empire Flag:</td><td><button id="btnSelFlag">Select</button></td><td class="edtd"><img id="imgSelectedFlag"></img></td></tr>
+   <tr><td class="edtd">Greeting Message:</td><td colspan="2" class="edtd"><input type="text" id="empGreetText" value=""></td><td class="edtd"></td></tr>
+   <tr><td class="edtd">Empire Description:</td><td class="edtd"></td><td class="edtd"></td></tr></table>
+   <textarea id="empDescText" value=""></textarea>
+
+  </div>
+  <h3>Starting Location</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Fleet Design and Tactics</h3>
+  <div>
+   <fieldset>
+   <h3>Default Fleet Formation Settings</h3>
+   <p><aside>* These are default values if unspecified. Please note, Tactics are assignable to each fleet.</aside></p>
+   <p><span> <label for="dfltFleetFormation"> Default Fleet Formation:</label>
+    <select class="eFleet" id="dfltFleetFormation">
+      <option selected="selected">Line</option>
+      <option>Sphere</option>
+      <option>Cone</option>
+      <option>Wall</option>
+    </select></p>
+    <p><span> <label for="dfltFleetDisp"> Default Fleet Disposition:</label>
+    <select class="eFleet" id="dfltFleetDisp">
+      <option selected="selected">Small Ships Front</option>
+      <option>Capital Ships front</option>
+      <option>Escort (Capital Ships - middle)</option>
+    </select></p>
+    <p><span> <label for="dfltFleetDist"> Default Fleet Distance:</label>
+    <select class="eFleet" id="dfltFleetDist">
+      <option selected="selected">Dispersed</option>
+      <option>Normal</option>
+      <option>Tight</option>
+    </select></p>
+    <p><span> <label for="dfltRetreatThreshold"> Default Retreat Threshold:</label>
+    <select class="eFleet" id="dfltRetreatThreshold">
+      <option selected="selected">0%</option>
+      <option>10%</option>
+      <option>20%</option>
+      <option>30%</option>
+      <option>40%</option>
+      <option>50%</option>
+      <option>60%</option>
+      <option>70%</option>
+      <option>80%</option>
+      <option>90%</option>
+      <option>100%</option>
+    </select></p>
+	</fieldset>    
+    
+
+  </div>
+  <h3>Biological Customization</h3>
+  <div>
+  <p>8 rating points may be allocated across the 4 biological characteristics, the maximum is 4 and the minimum is 0.
+  The ratings for these characteristics influence the outcomes of the aspects defined below the selections .
+  
+  <fieldset>
+   <p><span> <label for="empireEnvironment"> Environmental Adaption:</label>
+    <select class="eBio" id="empireEnvironment">
+      <option selected="selected">0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select></p>
+<p><aside>* Environmental adaption factor is the percentage rate of increase per turn of a star systems EA (suitability for habitation).</aside></p>
+    
+    <p><span> <label for="empireEconomics"> Economics:</label>
+    <select class="eBio" id="empireEconomics">
+      <option selected="selected">0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select></p>
+    	<p><aside>* Economics rating equates to the percentage bonus that is applied when calculating the empire's Income  per game turn.</aside></p>
+    
+    <p><span> <label for="empireAggression"> Aggression:</label>
+    <select class="eBio" id="empireAggression">
+      <option selected="selected">0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select></p>
+    <p><aside>* Aggression is factored into calculating % hit probabilities during space combat, and planetary bombardment.</aside></p>
+    
+    <p><span> <label for="empireProduction"> Production:</label>
+    <select class="eBio" id="empireProduction">
+      <option selected="selected">0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select></p>
+    	<p><aside>* Production bonus is the additional rate of increase of industry of an empire per turn, and is also applied in calculating the maximum industrial output capacity.</aside></p>
+    </fieldset>
+    <div id="flagDlg"></div>
+   
+
+  </div>
+  </div>

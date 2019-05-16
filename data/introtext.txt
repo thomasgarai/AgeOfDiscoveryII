@@ -1,0 +1,26 @@
+<div id="divWelcome">
+ 
+<h3>Introduction</h3>
+  <div>
+<h4>A Brief History</h4>
+<p>The beginning of the 21'st century was the second Age of Discovery for mankind. This era marked the time of remarkable scientific discoveries, enabling impressive engineering 
+achievements and technological advancements that led to extensive interstellar exploration of nearby stars. The late 21'st and early 22'nd centuries emerged as 
+a powerful factor in human cultural and scientific development. Many habitable worlds previously unknown to Earth's scientific community were discovered during this period, 
+mostly inhabited by non-sentient life forms that could host human habitation. From the perspective of the Earth's population this era marked the departure of 
+millions of explorers and pioneers, keen to leave the old world to explore distant and new horizons on unknown worlds.
+</p><br>
+<p>During the second age of discovery the nearby star systems were explored and colonized and during this period  the wormhole  generators were created to connect the neighbouring stars together. The daisy chain of SWP links provided a vital communication and transport channel with Earth and enabled 
+the instantaneous transportation between the stars, separated by vast distances. Within the span of a few thousand years many of the new worlds became 
+distant civilizations that rivalled the old world (Earth) in many aspects.  The next significant era was the time of the "thousand worlds". This era, also known as 
+the "Pax Terrarum", or "Peace on Earth" lasted approximately 2400 years.  During this time, Earth's interstellar empire prospered to an unprecedented level of political stability, 
+and at its height, (c. 4400 ad), was the most extensive . By 4500 AD the empire had grown too vast to be ruled from the central government of Earth.  
+</p><br>
+<p>The end of the age of the "Pax Terrarum" was the decline of the civilization of mankind. This was the process of decline in which the world government failed to enforce its rule, 
+and its vast interstellar  territory was divided into thousands of independent worlds. The government of Earth lost the strengths that had allowed it to exercise effective control; 
+the effectiveness and numbers of the military, the health and numbers of Earth's population, the strength of the economy, the competence of the Government, the religious changes 
+of the period, and the efficiency of the civil administration were factors to blame in its decline. 
+</p><br>
+
+</div>
+
+</div>

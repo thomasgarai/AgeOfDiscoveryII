@@ -1,0 +1,151 @@
+				html, body {
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #242424;
+            }
+            #renderCanvas {
+            background-color: #242424;
+				height: 100%;
+				width:100%;
+				z-index:-1;
+				top:0; 
+            right:0;
+            }
+            #divSetupIn {
+            background-color: #242424;
+            }
+            #divSetup {
+         	background-color: #242424;
+         	}
+            
+            #maindiv {
+            position:absolute; 
+            top:0; 
+            left:0;
+				background-color: #242424;
+				border-color: #FFFFFF;
+            height: 70%;
+            width: 40%;
+				z-index:0;
+				border: 1px solid #777;
+				height:100%;
+    			overflow-y:auto;
+    			font-size:15px !important;
+            }
+            #starDlg {
+            background-color: #242424;
+            color: #eeeeee;
+				font-size:15px !important;
+            }
+            
+            #introheader {
+            font-size: 40px;
+            color: #eeeeee;
+            }
+            #introtext {
+            font-size: 20px;
+            color: #eeeeee;
+            }
+            #SDheader {
+            font-size: 20px;
+            color: #eeeeee;
+            }
+            #SDtext {
+            font-size: 20px;
+            color: #eeeeee;
+            }
+            #tabs {
+   		 	height:100%;
+    			overflow-y:auto;
+				}
+				#empNameText{
+				width: 430px;
+				height: 30px;				
+				}
+				#empDescText {
+				width: 550px;
+				height: 135px;
+				rows: 5;
+				cols: 150;
+				}
+				#empGreetText {
+				width: 430px;
+				height: 30px;
+				}
+           
+            #divFlagSelect {
+            
+            }
+            #divFlagSelect {
+            	overflow:auto;
+            }
+            .edtd {
+            	height: 45px;
+            
+            }
+            .flagTR {
+            
+            }
+            .flagTD {
+            	padding: 2px;
+            }
+            .flagTD:hover {
+  				background-color: grey;
+  				color: #000000;
+				} 
+            select {
+            color: #eeeeee;
+            background-color: #242424;
+            }
+            .ui-dialog {
+            color: #eeeeee;
+            background-color: #242424;
+            }    
+            .ui-dialog-titlebar {
+            color: #eeeeee;
+            background-color: #242424;
+            }
+            .ui-dialog-buttonpane {
+            color: #eeeeee;
+            background-color: #242424;
+            }
+            .ui-button {
+            color: #eeeeee;
+            background-color: #242424;
+            }
+            fieldset {
+    		 	border: 1;
+    			}
+    			label {
+      		display: block;
+      		margin: 30px 0 0 0;
+    			}
+    			.eBio {
+      		width: 100px;
+				display:inline-block;
+    			}
+				.eFleet {
+      		width: 200px;
+      		display:inline-block;
+    			}
+    			.eFlag {
+      		width: 200px;
+      		align-items: right;
+				display:inline-block;
+    			}
+    			.overflow {
+      		height: 100px;
+    			}
+    			/* select with custom icons */
+				.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item {
+					padding: 0.5em 0 0.5em 3em;
+				}
+				.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+					height: 24px;
+					width: 24px;
+					top: 0.1em;
+				}
+				
