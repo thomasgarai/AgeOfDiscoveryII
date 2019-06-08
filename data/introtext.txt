@@ -23,4 +23,23 @@ of the period, and the efficiency of the civil administration were factors to bl
 
 </div>
 
+<h3>Rules</h3>
+  <div>
+<h4>Game Overview</h4>
+<p>Age of Discovery II is a multiplayer turn based strategy game, played on a 3 dimensional map modelled on the closest 1000 stars of the Milky Way Galaxy. The map is centered on the Sun (Sol). 
+The game begins with the player choosing a starting location, customizing their racial characteristics and allocating resources to build their starting fleets. Multiple vessels can form a fleet.
+Fleets are sent out to neighbouring stars to explore, colonize and trade, using Deep Space Moves or using the Interconnected Hyperspace portals. Colonized star systems produce income by harvesting 
+resources. Using this income additional fleets can be purchased and sent out to further expand a player's empires boundaries. Eventually the player will run into a star system owned
+by another player.</p><br>
+</p><br>
+<h4>Movement</h4>
+<p>There are two types of movement, Deep Space Movement (DSM) and Hyperspace movement (HSM). With DSM a space vessel's conventional engines are used to propell it
+through the vast distances of space, This mode of movement is rather slow and will typically travel 0.2 parsecs a turn ( a year in real time). By using the Hyperspace Portals 
+a space vessel may travel instantaneously from one star system to the connected star system using this portal. If the player owns the connected star system, the vessels may again use the hyperspace portal
+of that star system to hop to the next location in the same game turn. If the player does not own the destination star system contention will take place, a battle or bombardment of a star systems resource planets.
+So if the player owns the star systems between the start and destination locations, and those star systems are linked by hyperspace portals it is possible to traverse across the distance in the one game turn.
+
+</p><br>
+</p>
+</div>
 </div>

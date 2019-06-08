@@ -264,25 +264,20 @@ function flagSelect(selectedflag,flimage)
 
   function reZoomTable(selectedRow)
   {
-  	 	var x = hygDataArr[selectedRow._DT_RowIndex][5];
-		var y = hygDataArr[selectedRow._DT_RowIndex][6];
-		var z = hygDataArr[selectedRow._DT_RowIndex][7];
-  		var xx = (x* 100)+2;
-  		var yy = (y* 100)+2;
-  		var zz = (z* 100)+2;
-  	
-  		camera.setPosition(new BABYLON.Vector3(xx,yy,zz));
+  	 	var x = hygDataArr[selectedRow._DT_RowIndex][4];
+		var y = hygDataArr[selectedRow._DT_RowIndex][5];
+		var z = hygDataArr[selectedRow._DT_RowIndex][6];
+		
+		camera.lookAt(calcXYZ(ra,dec,d));
+		  
   }
 
   
-  function reZoom(x,y,z)
+  function reZoom(ra,dec,d)
   {
-  	
-  		var xx = (x* 100)+2;
-  		var yy = (y* 100)+2;
-  		var zz = (z* 100)+2;
-  	
-  		camera.setPosition(new BABYLON.Vector3(xx,yy,zz));
+  			
+	camera.lookAt(calcXYZ(ra,dec,d));
+
   }
   
   function ehCClick(x,y)
@@ -476,6 +471,7 @@ function initScene() {
 
 		if( this.easeZooming )
 			return;
+			/*
 
 		//	cam shake
 		//	except it's horrible when zoomed in
@@ -491,9 +487,9 @@ function initScene() {
 		// camera.rotation.vy *= 0.98 * camera.position.z / 1000;
 
 		// camera.rotation.x *= constrain(camera.position.z / 100, 0, 1);		
-		// camera.rotation.y *= constrain(camera.position.z / 100, 0, 1);		
+		// camera.rotation.y *= constrain(camera.position.z / 100, 0, 1);		*/
 
-		camera.position.z += (camera.position.target.z - camera.position.z) * 0.125;
+		camera.position.z += (camera.position.target.z - camera.position.z) * 0.125; 
 
 	};
 

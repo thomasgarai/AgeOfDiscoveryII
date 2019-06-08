@@ -13,6 +13,20 @@ function loadStarData( dataFile, callback ){
 	xhr.send( null );
 }
 
+function calcXYZ(ra, dec, d)
+{
+	var distance = d * 3.26156 * 5;
+	var phi = (ra+90) * 15 * Math.PI/180;
+	var theta = dec * Math.PI/180;
+	var rho = distance;
+	var rvect = rho * Math.cos( theta );
+	var x = rvect * Math.cos( phi );
+	var y = rvect * Math.sin( phi );
+	var z = rho * Math.sin( theta );
+
+	return new THREE.Vector3(x,y,z);;
+
+}
 
 //	points in the sky in HIPPARCOS star cluster
 var datastarTexture0 = THREE.ImageUtils.loadTexture( "images/p_0.png" );
@@ -80,9 +94,6 @@ function generateHipparcosStars(){
 			star.id,
 			star.name,
 			star.d.toFixedDown(2),
-			star.x.toFixedDown(2),
-			star.y.toFixedDown(2),
-			star.z.toFixedDown(2),
 			star.con);
 
 		//	original data is in parsecs
@@ -107,26 +118,9 @@ function generateHipparcosStars(){
 			distance = 0;
 		}
 
-		var p = new THREE.Vector3(0,0,0);
-
-		var ra = star.ra;
-		var dec = star.dec;
-
-		//	using this method
-		//	http://math.stackexchange.com/questions/52936/plotting-a-stars-position-on-a-2d-map
-		var phi = (ra+90) * 15 * Math.PI/180;
-		var theta = dec * Math.PI/180;
-		var rho = distance;
-		var rvect = rho * Math.cos( theta );
-		var x = rvect * Math.cos( phi );
-		var y = rvect * Math.sin( phi );
-		var z = rho * Math.sin( theta );
-
-		p.set(x,y,z);
-
-		
-
-		// console.log( star.position );
+		var p = calcXYZ(star.ra,star.dec,star.d);
+		//var coordinatesXYZ = calcXYZ(star.ra,star.dec,star.d);
+		//p.set(coordinatesXYZ);
 
 		// p.size = 0.16;
 		p.size = 20.0;
@@ -161,10 +155,7 @@ function generateHipparcosStars(){
 		  { title: "Star id" },
 		  { title: "Star Name" },
 		  { title: "Distance from Sol" },
-		  { title: "Posn-X (parsec)" },
-		  { title: "Posn-Y (parsec)" },
-		  { title: "Posn-Z (parsec)" },
-		  { title: "Constell." } 
+		  { title: "Constellation" } 
 
 		]
 		  } );
